@@ -79,4 +79,4 @@ resort-management-system/
 - Enhance UI/UX
 
 ## Author
-- [Your Name](https://github.com/your-username)
+- Aishwarya M

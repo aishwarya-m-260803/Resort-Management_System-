@@ -1,0 +1,13 @@
+{
+    "name": "resort-project-root",
+    "version": "1.0.0",
+    "scripts": {
+        "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+        "start-backend": "cd backend && npm start",
+        "start-frontend": "cd frontend && npm start",
+        "dev": "concurrently \"npm run start-backend\" \"npm run start-frontend\""
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    }
+}

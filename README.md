@@ -77,10 +77,9 @@ frontend/  → UI components, pages
 * `/api/bookings` → Bookings
 * `/api/admin` → Admin operations
 
-
 ---
 
-## Future Improvements
+##  Future Improvements
 
 * Payment integration
 * Notifications (Email/SMS)
@@ -89,5 +88,6 @@ frontend/  → UI components, pages
 
 ---
 
-Author
-Aishwarya M
+## Author
+
+**Aishwarya M**

@@ -1,12 +1,12 @@
-#  Resort Management System
+# 🏨 Resort Management System
 
 A full-stack web application that streamlines resort operations by enabling seamless bookings for guests and efficient management for administrators.
 
 ---
 
-##  Features
+## 🚀 Features
 
-###  Guest
+### 👤 Guest
 
 * User authentication (JWT-based)
 * Browse and book rooms (Standard, Deluxe, Suite, Villa)
@@ -17,7 +17,7 @@ A full-stack web application that streamlines resort operations by enabling seam
 
 ---
 
-###  Admin
+### 🛠️ Admin
 
 * Dashboard for overall management
 * Manage rooms, bookings, activities, and dining
@@ -25,7 +25,7 @@ A full-stack web application that streamlines resort operations by enabling seam
 
 ---
 
-##  Tech Stack
+## 🧑‍💻 Tech Stack
 
 * **Frontend:** React.js, React Router, Framer Motion
 * **Backend:** Node.js, Express.js
@@ -36,7 +36,7 @@ A full-stack web application that streamlines resort operations by enabling seam
 
 ---
 
-##  Installation
+## ⚙️ Installation
 
 ```bash
 git clone https://github.com/your-username/resort-management-system.git
@@ -47,7 +47,7 @@ npm run install-all
 Create `.env` in `backend/`:
 
 ```env
-MONGO_URI=your_mongodb_connection
+MONGO_URI=mongodb://localhost:27017/resort_db
 PORT=5000
 SESSION_SECRET=your_secret
 ```
@@ -60,7 +60,7 @@ npm run dev
 
 ---
 
-##  Structure
+## 📁 Structure
 
 ```
 backend/   → APIs, models, controllers  
@@ -69,7 +69,7 @@ frontend/  → UI components, pages
 
 ---
 
-##  API
+## 🔗 API
 
 * `/api/auth` → Authentication
 * `/api/rooms` → Rooms
@@ -79,7 +79,7 @@ frontend/  → UI components, pages
 
 ---
 
-##  Future Improvements
+## 🚧 Future Improvements
 
 * Payment integration
 * Notifications (Email/SMS)
@@ -88,6 +88,6 @@ frontend/  → UI components, pages
 
 ---
 
-## Author
+## 👩‍💻 Author
 
 **Aishwarya M**

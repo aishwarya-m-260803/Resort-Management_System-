@@ -1,82 +1,93 @@
-# Resort Management System
+#  Resort Management System
 
-A web-based application to manage resort operations such as bookings, customer details, and services.
+A full-stack web application that streamlines resort operations by enabling seamless bookings for guests and efficient management for administrators.
 
-## Features
-- User booking system
-- Admin panel
-- Customer management
-- Room/service management
+---
 
-## Tech Stack
-- Node.js
-- Express.js
-- React.js
-- MongoDB
-- HTML, CSS, JavaScript
+##  Features
 
-## Installation Steps
+###  Guest
 
-### 1. Clone the Repository
+* User authentication (JWT-based)
+* Browse and book rooms (Standard, Deluxe, Suite, Villa)
+* Explore and register for activities
+* Reserve dining experiences
+* Manage bookings and profile
+* Smooth and responsive UI
+
+---
+
+###  Admin
+
+* Dashboard for overall management
+* Manage rooms, bookings, activities, and dining
+* Monitor and control user accounts
+
+---
+
+##  Tech Stack
+
+* **Frontend:** React.js, React Router, Framer Motion
+* **Backend:** Node.js, Express.js
+* **Database:** MongoDB (Mongoose)
+* **Auth & Security:** JWT, bcrypt
+
+> MongoDB is used for its flexible, document-based structure, making it ideal for handling dynamic data like bookings, activities, and user information.
+
+---
+
+##  Installation
+
 ```bash
 git clone https://github.com/your-username/resort-management-system.git
 cd resort-management-system
+npm run install-all
 ```
 
-### 2. Install Dependencies
-#### Backend
+Create `.env` in `backend/`:
+
+```env
+MONGO_URI=your_mongodb_connection
+PORT=5000
+SESSION_SECRET=your_secret
+```
+
+Run the app:
+
 ```bash
-cd backend
-npm install
-```
-#### Frontend
-```bash
-cd ../frontend
-npm install
+npm run dev
 ```
 
-### 3. Set Up the Database (MongoDB)
-- Ensure MongoDB is installed and running locally or provide a MongoDB Atlas connection string.
-- Update the MongoDB connection URI in `backend/config/db.js` if needed.
+---
 
-### 4. Run the Project Locally
-#### Start Backend Server
-```bash
-cd backend
-npm start
+##  Structure
+
 ```
-#### Start Frontend Server
-```bash
-cd ../frontend
-npm start
+backend/   → APIs, models, controllers  
+frontend/  → UI components, pages  
 ```
 
-## Usage Instructions
-- Access the frontend at `http://localhost:3000`.
-- Use the application to register, log in, book rooms/services, and manage resort operations.
-- Admins can log in to access the admin panel for management features.
+---
 
-## Folder Structure
-```
-resort-management-system/
-├── backend/
-│   ├── controllers/
-│   ├── middleware/
-│   ├── models/
-│   ├── routes/
-│   └── ...
-├── frontend/
-│   ├── public/
-│   ├── src/
-│   └── ...
-└── README.md
-```
+##  API
+
+* `/api/auth` → Authentication
+* `/api/rooms` → Rooms
+* `/api/activities` → Activities
+* `/api/bookings` → Bookings
+* `/api/admin` → Admin operations
+
+
+---
 
 ## Future Improvements
-- Add payment gateway integration
-- Implement notifications (email/SMS)
-- Add analytics dashboard for admins
-- Enhance UI/UX
 
-## Author
-- Aishwarya M
+* Payment integration
+* Notifications (Email/SMS)
+* Reviews & ratings
+* Real-time updates
+
+---
+
+Author
+Aishwarya M
